@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="css/cities_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik:ital,wght@0,300;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <%- include("partials/nav-bar") -%>
+    <div class="main">
+      <div class="cities">
+        <h2>Cities I've Visited</h2>
+        <% entriesArray.forEach(element=> { %>
+          <div class="entry">
+            <figure>
+              <a href="<%= element.entryUrl %>"><img src="<%= element.imgDir %>" alt="City Picture"></a>
+              <figcaption><a href="<%= element.entryUrl %>"><%= element.cityName %></a></figcaption>
+            </figure>
+          </div>
+
+          <% }) %>
+      </div>
+      <%- include("partials/most-liked") -%> 
+    </div>
+</body>
+
+</html>

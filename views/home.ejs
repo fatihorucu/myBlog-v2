@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <a class="logo" href="/"><img src="images/globe.png" alt="Globe"></a>
+        <h1>My Travel Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/cities">Cities</a></li>
+            <li>✈️</li>
+            <li><a href="/who-am-i">Who Am I</a></li>
+            <li>✈️</li>
+            <li><a href="/contact-me">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+      <div class="recents">
+        <h2>Recents</h2>
+        <% if (entriesArray.length < 3) { %>
+          <% entriesArray.forEach(element => { %>
+            <div class="entry">
+              <figure>
+                <a href="<%= element.entryUrl %>"><img src="<%= element.imgDir %>" alt="City Picture"></a>
+                <figcaption><a href="<%= element.entryUrl %>"><%= element.cityName %></a></figcaption>
+              </figure>
+              <h3><a href="<%= element.entryUrl %>"><%= element.entryTitle %></a></h3>
+              <p class="entry_info"><a href="<%= element.entryUrl %>"><%= element.entry %></a>
+              </p>
+            </div>
+          <% }) %><% } else { %>
+            <% for( let index = entriesArray.length - 1; index > entriesArray.length -4 ; index-- ) { %>
+              <div class="entry">
+                <figure>
+                  <a href="<%= entriesArray[index].entryUrl %>"><img src="<%= entriesArray[index].imgDir %>" alt="City Picture"></a>
+                  <figcaption><a href="<%= entriesArray[index].entryUrl %>"><%= entriesArray[index].cityName %></a></figcaption>
+                </figure>
+                <h3><a href="<%= entriesArray[index].entryUrl %>"><%= entriesArray[index].entryTitle %></a></h3>
+                <p class="entry_info"><a href="<%= entriesArray[index].entryUrl %>"><%= entriesArray[index].entry %></a>
+                </p>
+              </div>
+            <% } %>
+        <% } %>
+      </div>
+      <%- include("partials/most-liked") -%> 
+    </div>
+  </body>
+</html>

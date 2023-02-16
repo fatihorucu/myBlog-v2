@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="css/who_am_i_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <%- include("partials/nav-bar") -%> 
+  <div class="main">
+    <div class="me">
+      <h2>It's Me</h2>
+      <div class="entry">
+        <figure>
+          <img class = "myP" src="images/empty.JPG" alt="Me :)">
+          <button type="button" name="dogduGunesim">Doğdu Güneşim :D</button>
+        </figure>
+      </div>
+      <div class="entry">
+        <article class="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in fermentum augue. Maecenas consequat vulputate consectetur. Vestibulum rutrum sagittis nisi, vel vehicula odio blandit eget. Duis ac bibendum ligula. Donec at justo a diam tincidunt lobortis vitae non purus. Sed nec porttitor lorem. Nam id arcu sagittis, bibendum mi quis, placerat metus. Maecenas congue, felis pharetra convallis pellentesque, dui nisi rutrum eros, et vulputate massa leo eu nunc. Aenean risus mauris, pulvinar eget eros et, auctor rhoncus odio. Nulla semper dictum nisi in auctor. Donec imperdiet, urna sit amet malesuada tincidunt, justo risus feugiat nisi, quis tincidunt arcu metus non massa.</p>
+        </article>
+      </div>
+    </div>
+    <%- include("partials/most-liked") -%> 
+  </div>
+  <script src="js/who_am_i.js" charset="utf-8"></script>
+</body>
+
+</html>

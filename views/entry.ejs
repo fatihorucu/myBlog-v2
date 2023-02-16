@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="/css/entry_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <%- include("partials/nav-bar")  -%> 
+  <div class="main">
+    <div class="left">
+      <h2><%= cityName %></h2>
+      <div class="entry">
+        <figure>
+          <a href="<%= entryUrl %>"><img src="<%= imgDir %>" alt="City Picture"></a>
+        </figure>
+        <article class="">
+          <h3><%= entryTitle %></h3>
+          <p class="entry_text_left"><%= entryPart1 %>
+          </p>
+          <p class="entry_text_right"><%= entryPart2 %>
+          </p>
+        </article>
+      </div>
+      <div class="entry">
+      </div>
+    </div>
+    <%- include("partials/most-liked") -%> 
+  </div>
+</body>
+
+</html>

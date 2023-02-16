@@ -1,0 +1,133 @@
+body{
+  background-color: #F3ECB0;
+}
+nav ul{
+  display: inline-block;
+  position: relative;
+  bottom: 25PX;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #1A120B;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Rubik",cursive;
+  font-style: italic;
+  font-weight:bold;
+  color: #1A120B;
+  font-size: 20px;
+}
+
+nav a img{
+  height: 80px;
+  width: 82px;
+  position: relative;
+  right: 0;
+}
+nav{
+  text-align: center;
+}
+h2{
+  color: #1A120B;
+  font-family: "Rubik",sans-serif;
+  margin-left: 35px;
+  font-weight: normal;
+}
+h3 a{
+  font-size: 25px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+h4{
+  color: #1A120B;
+  font-family: "Rubik",sans-serif;
+  margin-left: 35px;
+  font-weight: normal;
+  font-size: 20px;
+}
+fieldset{
+  border-style: none;
+  text-align: left;
+  margin-left: 30px;
+  position: relative;
+  top: 100px;
+}
+button{
+  margin-left: 35%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 40%;
+  height: 50px;
+  font-family: "Rubik",sans-serif;
+  font-weight: bolder;
+}
+.form_text{
+  width: 70%;
+  height: 25px;
+}
+.main{
+  width: 80%;
+  margin: auto;
+  margin-top: 75px;
+}
+.me{
+  width: 69%;
+  /* background-color: red; */
+  height: auto;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+}
+.most_liked{
+  width: 29%;
+  /* background-color: black; */
+  height: 600px;
+  border-style: solid;
+  border-width: 1px;
+  float: right;
+}
+
+.entry{
+  /* background-color: purple; */
+  width: 49%;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.popular_entry{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+.entry img{
+  width: 100%;
+  height: auto;
+}
+.popular_entry img{
+  width: 100%;
+  height: auto;
+}
+.popular_entry img:hover{
+  opacity: 0.9;
+}
+.popular_entry figcaption{
+  font-size: 15px;;
+  margin-top: 10px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: #404040;
+}
+#submit{
+  width: 75px;
+  height: 30px;
+}

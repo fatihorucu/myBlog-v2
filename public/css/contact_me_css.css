@@ -1,0 +1,47 @@
+body{
+  background-color: #F3ECB0;
+}
+nav ul{
+  display: inline-block;
+  position: relative;
+  bottom: 25PX;;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #1A120B;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Rubik",cursive;
+  font-style: italic;
+  font-weight:bold;
+  color: #1A120B;
+  font-size: 20px;
+}
+nav a img{
+  height: 80px;
+  width: 82px;
+  position: relative;
+  right: 0;
+}
+nav{
+  text-align: center;
+}
+a:hover{
+  color: #404040;
+}
+.main li{
+  list-style: none;
+  display: inline-block;
+  margin:100px 20px 0;
+}
+.main {
+  text-align: center;
+}
+li a img{
+  height: 100px;
+  width: 100px;
+}

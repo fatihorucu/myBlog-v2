@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>My Blog Compose</title>
+</head>
+
+<body>
+    <h1>Compose</h1>
+    <form action="/compose" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label">City Title</label>
+            <input type="text" class="form-control" name="cityTitleText">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Entry Title</label>
+            <input type="text" class="form-control" name="entryTitleText">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Post</label>
+            <textarea class="form-control" rows="5" name="postText"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Image</label>
+            <input type="file" class="form-control-file" name ="image">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Publish</button>
+
+    </form>
+</body>
+
+</html>

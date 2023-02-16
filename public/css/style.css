@@ -1,0 +1,141 @@
+body{
+  background-color: #F3ECB0;
+}
+h1{
+  color: #3C2A21;
+  font-family: "Rubik Vinyl", cursive;
+  position: relative;
+  top: 200px;
+}
+h2{
+  color: #1A120B;
+  font-family: "Rubik",sans-serif;
+  margin-left: 35px;
+  font-weight: normal;
+}
+h3 a{
+  font-size: 25px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+h4{
+  color: #1A120B;
+  font-family: "Rubik",sans-serif;
+  margin-left: 35px;
+  font-weight: normal;
+  font-size: 20px;
+}
+header{
+  width: 100%;
+  height: 649px;
+  text-align: center;
+}
+nav ul li{
+  list-style: none;
+  display: inline;
+  color: #1A120B;
+
+}
+nav ul{
+  text-align: center;
+}
+li a {
+  text-decoration: none;
+  font-family: "Rubik",cursive;
+  font-style: italic;
+  font-weight:bold;
+  color: black;
+  font-size: 20px;;
+}
+fieldset{
+  border-style: none;
+  text-align: left;
+  margin-left: 30px;
+  position: relative;
+  top: 100px;
+}
+.form_text{
+  width: 60%;
+  height: 25px;
+}
+
+.logo{
+  position: relative;
+  top: 200px;
+}
+.main{
+  width: 80%;
+  margin: auto;
+}
+.recents{
+  width: 69%;
+  /* background-color: red; */
+  height: auto;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+}
+.most_liked{
+  width: 29%;
+  /* background-color: black; */
+  height: 600px;
+  border-style: solid;
+  border-width: 1px;
+  float: right;
+}
+
+.entry{
+  /* background-color: purple; */
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 10px;
+}
+.popular_entry{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+.entry img{
+  width: 100%;
+  height: auto;
+}
+.popular_entry img{
+  width: 100%;
+  height: auto;
+}
+.entry img:hover{
+  opacity: 0.9;
+}
+.popular_entry img:hover{
+  opacity: 0.9;
+}
+.entry figcaption {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.popular_entry figcaption{
+  font-size: 15px;;
+  margin-top: 10px;
+}
+.entry_info{
+  display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+  font-size: 20px;
+  text-align: center;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: #404040;
+}
+#submit{
+  width: 75px;
+  height: 30px;
+}
