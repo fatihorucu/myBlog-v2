@@ -4,4 +4,4 @@ Node.js and EJS is used in this version.
 .../compose is the way to go admin page.
 ### Visit online:
 https://infinite-crag-98571.herokuapp.com/
-\n Note: Subscribe part is coming soon.
+<br />Note: Subscribe part is coming soon.
